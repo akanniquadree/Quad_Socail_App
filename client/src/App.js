@@ -1,9 +1,9 @@
-import Topbar from "./Components/Topbar/Topbar";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <div>
-      <Topbar/>
+      <Home/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import "./topbar.css"
-import {Search, Home, Timeline, SportsEsports, OndemandVideo, Person, Chat, Notifications} from "@material-ui/icons"
+import {Search, Home, Timeline, SportsEsports, OndemandVideo, Person, Chat, Notifications, AddCircle} from "@material-ui/icons"
 
 function Topbar() {
   return (
@@ -24,6 +24,9 @@ function Topbar() {
                 <div className="topbarImageItem">
                     <img src = "/images/john-boe.jpg" alt="" className="topbarImage"/>
                     <span >Akanni</span>
+                </div>
+                <div className="topbarIconItem">
+                    <AddCircle className="searchIcon visible"/>
                 </div>
                 <div className="topbarIconItem">
                     <Person className="searchIcon"/>

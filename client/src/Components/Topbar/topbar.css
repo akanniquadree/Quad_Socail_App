@@ -102,6 +102,37 @@
  margin-right: 5px;
  
 }
+.visible{
+    display: none !important;
+}
 
 
-/* Media */
+/* Mobile View */
+@media screen and (max-device-width:480px) {
+    .searchbar{
+        width:25%;
+        height: 40px;
+        margin-left: 5px;
+        border-radius: 50%;
+    }
+    .searchIcon{
+        font-size: 24px !important;
+        margin-left: 10px;
+    }
+    .searchInput{
+        visibility: hidden;
+    }
+    .logo{
+        margin-left: 10px;
+
+    }
+    .topbarCenter{
+        display: none;
+    }
+    .topbarImageItem{
+        display: none;
+    }
+    .visible{
+        display: block !important;
+    }
+}
