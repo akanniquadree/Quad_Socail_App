@@ -1,0 +1,298 @@
+a{
+    text-decoration: none;
+}
+.coverContainer{
+    width: 100vw;
+    height: calc(95vh - 70px) ;
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.67);
+    -webkit-box-shadow:0px 1px 16px -8px rgba(0,0,0,0.67);
+    background-color: linear-gradient(to top, #FFFFFF, rgba(255,255,255.9), rgba(255,255,255,.7), rgba(255,255,255,.4), rgba(255,255,255,0));
+}
+.coverWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.coverTop{
+    width: 70%;
+    height: 300px;
+    position: relative;
+    
+}
+.coverTop img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+}
+.coverCoverIcon{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: #f3f3f3;
+    color: black;
+    border-radius: 10px;
+    bottom: 25px;
+    right: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coverCoverIcon span{
+    margin-left: 10px;
+}
+.coverMiddle{
+    width: 70%;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.coverMiddleLeft{
+    height: 220px;
+    width: 22%;
+    margin: 0 15px 0 25px;
+    position: relative;
+}
+.coverMiddleLeft img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    cursor: pointer;
+}
+.coverMiddleLeft img:hover, .coverMiddleLeftSpan:hover{
+    background-color: rgb(206, 206, 206);
+}
+.coverMiddleLeftSpan{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(169, 171, 169);
+    position: absolute;
+    bottom: 3px;
+    right: 11px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.coverMiddleCenter{
+    width: 53%;
+}
+.coverMiddleCenterWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 20px;
+}
+.coverMiddleCenterWrapper h3{
+    font-size: 35px;
+}
+.coverMiddleCenterWrapper p,.coverMiddleCenterWrapper a{
+    margin-top: 6px;
+    color: rgb(139, 138, 138);
+    font-size: 18px;
+}
+.coverMiddleCenterWrapper a:hover{
+    text-decoration: underline;
+}
+.coverMiddleCenterImage{
+    display: flex;
+    position: relative;
+}
+.coverMiddleCenterImage img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+}
+.coverMiddleRight{
+    width: 20%;
+}
+.coverMiddleRightWrapper{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.addStory{
+    background-color: blue;
+    border-radius: 10px;
+    width: 140px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.addStory2{
+    background-color: rgb(121, 121, 122);
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.coverLists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coverList{
+    width: 80%;
+    display: flex;
+    list-style: none;
+}
+.coverListFirst{
+    width: 70%;
+    margin-right: 10px;
+}
+.coverListLeft{
+    display: flex;
+    list-style: none;
+}
+.coverListLeft li{
+    color: rgb(130, 130, 136);
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.coverActive{
+    color: #1713fd !important;
+    border-bottom: 3px solid #1713fd;
+}
+.coverListLeft li:hover{
+    background-color: rgb(177, 177, 183);
+    border-radius: 5px;
+}
+.coverListSecond{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.coverListSecondIcon{
+    color:rgb(0, 0, 0) !important;
+    padding:5px 10px;
+    background-color:rgb(212, 212, 212);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.coverListSecondIcon:hover{
+    background-color: #e4e1e1;
+}
+.coverHr{
+    margin: 20px 15% 5px 15%
+}
+
+
+
+
+
+@media screen and (max-device-width:480px) {
+    .coverContainer{
+        height: calc(103vh - 70px) ;
+    }
+    .coverTop{
+        width: 100%;
+        height: 200px;
+    } 
+    .coverTop img{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .coverCoverIcon span{
+        display: none;
+    }
+    .coverCoverIcon{
+        width: 50px;
+        height: 40px;
+        right: 8px;
+    }
+    .coverMiddle{
+        width: 100%;
+        height: 300px;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .coverMiddleLeft{
+    height: 220px;
+    width: 100%;
+    margin: 0 15px 0 25px;
+    position: relative;
+    }
+    .coverMiddleLeft img{
+        height: 201px;
+        width: 214px;
+        top: -111px;
+        left: 55px;
+        border: 5px solid white;
+    }
+    .coverMiddleLeftSpan{
+        bottom: 15px;
+        right: 107px;
+    }
+    .coverMiddleCenter{
+        width: 100%;
+    }
+    .coverMiddleCenterWrapper{
+        align-items: center;
+        width: 100%;
+    }
+    .coverMiddleCenterImage{
+        position: revert;
+        margin-right: 10px;
+    }
+    .coverMiddleRight{
+        width: 100%;
+    }
+    .coverMiddleRightWrapper{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .addStory{
+        margin-right: 15px;
+        margin-bottom: 0px;
+    }
+    .coverList{
+        padding: 0;
+        width: 100%;
+    }
+    .coverListFirst{
+        width: 70%;
+        margin-right: 10px;
+    }
+    .coverListLeft{
+        padding-left: 20px;
+    }
+    .coverListLeft li{
+
+        padding: 10px 20px;
+    }
+    .coverListLeft li:nth-child(3){
+        display: none;
+    }
+    .coverListLeft li:nth-child(4){
+        display: none;
+    }
+    .coverListLeft li:nth-child(5){
+        display: none;
+    }
+    .coverHr{
+        margin: 20px 5% 5px 5%
+    }
+   
+}

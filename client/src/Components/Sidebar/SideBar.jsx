@@ -1,5 +1,7 @@
 import "./sidebar.css"
 import {RssFeed, Chat, VideoCall, Bookmark, Group, Help,  Work, School, Event} from "@material-ui/icons"
+import { User } from "../../DummyData"
+import Friends from "../Friends/Friends"
 function SideBar() {
   return (
     <div className="sidebar">
@@ -45,34 +47,11 @@ function SideBar() {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr"/>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/images/john-boe.jpg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFre">Jane Doe</span>
-          </li>
+          {
+            User.map((itm, index)=>(
+              <Friends user={itm} key={index}/>
+            ))
+          }
         </ul>
       </div>
     </div>

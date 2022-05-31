@@ -15,7 +15,7 @@ function Share() {
                 <div className="shareOptions">
                     <div className="sharOption">
                         <PermMedia htmlColor="tomato" className="shareIcon"/>
-                        <span className="shareOptionText">Photo or Videos</span>
+                        <span className="shareOptionText">Photo/Videos</span>
                     </div>
                 </div>
                 <div className="shareOptions">
@@ -24,13 +24,13 @@ function Share() {
                         <span className="shareOptionText">Tag</span>
                     </div>
                 </div>
-                <div className="shareOptions">
+                <div className="shareOptions hide">
                     <div className="sharOption">
                         <Room htmlColor="green" className="shareIcon"/>
                         <span className="shareOptionText">Location</span>
                     </div>
                 </div>
-                <div className="shareOptions">
+                <div className="shareOptions hide">
                     <div className="sharOption">
                         <EmojiEmotions htmlColor="gold" className="shareIcon"/>
                         <span className="shareOptionText">Feelings</span>

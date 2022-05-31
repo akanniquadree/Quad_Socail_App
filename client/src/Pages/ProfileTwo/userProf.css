@@ -1,0 +1,26 @@
+.profileGrid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #f0f2f5;
+    align-items: center;
+    justify-content: center;
+}
+.profileGridWrapper{
+    width: 70%;
+    display: flex;
+    margin-top: 20px; 
+}
+
+
+
+
+@media screen and (max-width:465px) {
+    .profileGridWrapper{
+        flex-direction: column;
+        padding: 0 5px 0 25px;
+    }
+    .profileGridWrapper{
+        width: 100%;
+    }
+}

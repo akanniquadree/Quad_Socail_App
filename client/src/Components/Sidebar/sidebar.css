@@ -2,6 +2,8 @@
     flex:3;
     height: calc(100vh - 75px);
     overflow-y: scroll;
+    position: sticky;
+    top: 70px;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -56,3 +58,10 @@
     margin-right: 10px;
     border-radius: 50%;
 }
+    
+
+    @media screen and (max-device-width:480px) {
+        .sidebar{
+            display: none;
+        }
+    }

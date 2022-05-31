@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     background-color: rgba(47, 11, 191, 0.801);
+    z-index: 999;
 }
 .topbarLeft{
     flex:3;
