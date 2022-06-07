@@ -99,7 +99,10 @@ h3 ~ a:hover{
 .userFriendList img ~ h6{
     font-weight: 800;
 }
-
+.feeedwrap{
+    flex: 3;
+    margin-top:0
+}
 
 
 
@@ -122,5 +125,8 @@ h3 ~ a:hover{
         display: grid;
         grid-template-columns: repeat(3, 80px);
         grid-template-rows: repeat(3, 80px);
+    }
+    .feeedwrap{
+        margin-top: 20px;
     }
 }

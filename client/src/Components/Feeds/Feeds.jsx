@@ -5,11 +5,11 @@ import Stories from "../Stories/Stories"
 import "./feed.css"
 
 
-function Feeds() {
+function Feeds(profile) {
   return (
     <div className="feeds">
-      <div className="feedWrapper">
-        <Stories/>
+      <div className={`${profile ? "feedwrapper" :"feedWrapper"}`}>
+      {profile ?<div></div>:<Stories/>}
         <Share/>
         {
           Posts.map((itm, index)=>(

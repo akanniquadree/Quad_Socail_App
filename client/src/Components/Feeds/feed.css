@@ -4,6 +4,9 @@
 .feedWrapper{
     padding: 20px;
 }
+.feedwrapper{
+    padding: 0px;
+}
 @media screen and (max-device-width:480px) {
     .feedWrapper{
         padding: 6px;

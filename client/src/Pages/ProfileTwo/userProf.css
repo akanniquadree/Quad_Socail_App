@@ -5,6 +5,7 @@
     background-color: #f0f2f5;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 .profileGridWrapper{
     width: 70%;

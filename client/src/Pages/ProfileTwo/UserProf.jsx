@@ -1,3 +1,5 @@
+import Feeds from "../../Components/Feeds/Feeds"
+import RightBar from "../../Components/Rightbar/RightBar"
 import Topbar from "../../Components/Topbar/Topbar"
 import UserInfo from "../../Components/UserInfo/UserInfo"
 import CoverDIv from "../../Components/UserProfile/CoverDIv"
@@ -11,7 +13,9 @@ export default function UserProf() {
         <div className="profileGrid">
           <div className="profileGridWrapper">
             <UserInfo/>
-            <div style={{flex: "3"}}>dnjkushjdskkdjkd</div>
+            <div className="feeedwrap">
+                <Feeds profile/>
+            </div>
           </div> 
         </div>
     </div>
